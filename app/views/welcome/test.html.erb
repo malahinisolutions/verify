@@ -1,9 +1,9 @@
 <html>
   <head>
 
-    <%= favicon_link_tag 'https://idv.amltoken.com/assets/logo.png', :type => 'image/png' %>
 
-    <% title= content_for?(:title) ? yield(:title) : "AML Bitcoin" %>
+
+    <% title= content_for?(:title) ? yield(:title) : "" %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -25,7 +25,7 @@
     <section class='login_bg'>
       <header>
         <div class='container'>
-          <a href="/"><img class="img-responsive" src="/assets/small-logo.png" alt="Small logo" /></a>
+          
         </div>
       </header>
       <div class='container'>
@@ -57,7 +57,7 @@
         <div class='container text-center'>
           <p></p>
           <div class='col-md-4'>
-            &copy; 2017 AML Bitcoin, All rights reserved.
+            Designed & Developed By: <a href="http://www.malahinisolutions.com" title="Malahini Solutions" target="_blank">Malahini Solutions</a>
           </div>
           <div class='col-md-6 footermenu none'></div>
           <div class='col-md-2 none'></div>

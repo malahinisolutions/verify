@@ -102,8 +102,7 @@ font-family: 'open_sansregular';}
 
 .welcome-login-page { background:#013660}
 
-.welcome-div-wrap { background:url(/assets/body_bg.jpg) no-repeat;
-background-size:cover;}
+
 .clr { clear:both}
 
 .welcome-div-wrap .row {margin-bottom: 0px;}
@@ -187,7 +186,7 @@ padding-right:20px}
 	margin:0px;
 	padding:0px;}
 
-.credentials-page .login-box { max-width:440px; margin: 0 auto;} 
+.credentials-page .login-box { max-width:440px; margin: 0 auto;}
 
 .credentials-page .login-box label { font-size:16px;
 margin-bottom:10px;
@@ -480,7 +479,7 @@ font-family: 'Lato', sans-serif;
 
 
 }
-.process-bar .p1 { background:url(/assets/p1h.png) center center no-repeat;
+.process-bar .p1 { 
 width:308px;
 height:80px;
 margin:0px 0px 0px 0px;

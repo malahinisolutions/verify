@@ -40,10 +40,10 @@ h4 {
 
 header, section, footer, aside, nav, main, article, figure {
     display: block;
-} 
+}
 
 .bg {
-	background: url(/assets/body_bg.jpg) no-repeat top center fixed ; 
+
 
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -52,7 +52,7 @@ header, section, footer, aside, nav, main, article, figure {
 			min-height:100%;
 }
 
-.login_bg{	background: url(/assets/login_bg.jpg) no-repeat top center fixed ; 
+.login_bg{	
 
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -76,16 +76,16 @@ hr {
 body{overflow-x:hidden;}
 #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
   #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;} 
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
   #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
   #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-  
+
 .title{ color:#EFB03C; font-family:"Trajan pro"; font-weight:bold; font-size:44px;}
-.subtitle{ font-family:"Trajan pro"; font-size:18px; color:#000000; font-weight:bold; line-height:0;} 
+.subtitle{ font-family:"Trajan pro"; font-size:18px; color:#000000; font-weight:bold; line-height:0;}
 
 #footer{background:#013660; color:#fff; padding:1% 0%;}
 
-.form_group{background:url(/assets/from_bg.jpg) center center no-repeat; padding:3% 3% 14% 3%; background-size:95%; font-family:"Trajan pro"; font-size:12px; font-weight:bold; }
+.form_group{padding:3% 3% 14% 3%; background-size:95%; font-family:"Trajan pro"; font-size:12px; font-weight:bold; }
 h3{font-family:"Open Sans Light"; color:#FFFFFF; font-size:20px; padding-bottom:5%;}
 .lg_btn{background:url(/assets/btn_bg.png) no-repeat; padding:10px; display:block; color:#000000;}
 .btn_block{ width:60%; margin:0px auto; text-transform:uppercase;}
@@ -107,7 +107,7 @@ hr{ border-bottom:1px solid #A1B5C9;}
 .small-font{color:#999999; font-size:10px; display:block;}
 .member{display:block; color:#013660; text-decoration:underline; font-weight:bold; line-height:40px;}
 .space{padding:1% 0%;}
-.email,.pass{position:relative;} 
+.email,.pass{position:relative;}
 
 .fa-envelope, .fa-key{color:#A5B0BA; position:absolute; top:30px; left:10px; font-size:9px;}
 .forgetp{color:#3A5480; font-size:10px;}
@@ -130,7 +130,7 @@ p{color:#FFFFFF;}
 .nav li a{
 display: block;
 font-size:10px; color:#FFFFFF; padding:5px 5px 5px 128px; text-align:center;}
-.home:before{ content:url('/assets/home-li.png'); position:absolute; left:0x; top:14px;  }
+.home:before{ }
 .home{  position:relaive;
    }
 .identity{ position:relative;}
