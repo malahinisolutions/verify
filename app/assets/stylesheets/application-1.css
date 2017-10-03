@@ -633,3 +633,7 @@ color:#000;
     margin: 0px auto;
     cursor: pointer;
 }
+#footer {
+    background: #013660 none repeat scroll 0 0 !important;
+    color: #fff !important;
+}
