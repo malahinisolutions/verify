@@ -1,2 +1,0 @@
-module Verifiers::VerifiersHelper
-end
