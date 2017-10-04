@@ -50,3 +50,7 @@ margin-bottom: 30px;
     color: #013660 !important;
         font-size: 19px !important;
     }
+.login-page #footer{
+  background: #013660 !important;
+  color: #fff !important;
+}
