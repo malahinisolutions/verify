@@ -1,7 +1,7 @@
 .account-area.credentials-page
   .row
     .col-lg-12
-      %h1 Aml Bitcoin Credentials
+      %h1 Verification System Credentials
       .login-box
         = form_for(@wallet, :html => { :method => :post, role: "form" }) do |f|
           - if @errors
@@ -17,6 +17,6 @@
             = f.password_field :password, value: @password, :required => "true", class: "form-control"
           = submit_tag  "Save", class: "submit"
           .note
-            %p You are required to input your Aml Bitcoin Credentials to activate your Aml Bitcoin Wallet. Without them, you cannot create any Aml Bitcoin addresses, and you cannot send your aml bitcoins to anyone.
+            %p You are required to input your Verification System Credentials to activate your Verification System Wallet. Without them, you cannot create any Verification System addresses, and you cannot send your Verification Systems to anyone.
             %h3 Important:
-            %p These Aml Bitcoin Credentials are linked to your real personal identity, making Aml Bitcoin AML/KYC compliant. Never give/share your credentials with any other person.
+            %p These Verification System Credentials are linked to your real personal identity, making Verification System AML/KYC compliant. Never give/share your credentials with any other person.
