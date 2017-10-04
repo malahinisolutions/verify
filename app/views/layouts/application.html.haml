@@ -49,12 +49,12 @@
           .main-right-area
             %header
               .page-title
-                = link_to image_tag("inner-heading.png", :class => "img-responsive"), control_download_wallet_path
+                
               - if current_account
                 .my-accout.pull-right
                   .dropdown
                     %button.dropdown-toggle{"data-toggle" => "dropdown", :type => "button"}
-                      
+
                       #{current_account.email}
                       %span.caret
                     %ul.dropdown-menu.dropdown-menu-right
