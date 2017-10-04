@@ -1,7 +1,7 @@
 .account-area.credentials-page
   .row
     .col-lg-12
-      %h1  Credentials
+      %h1 Aml Bitcoin Credentials
       .login-box
         = form_for(@wallet, :html => { :method => :post, role: "form" }) do |f|
           - if @errors
@@ -17,6 +17,6 @@
             = f.password_field :password, value: @password, :required => "true", class: "form-control"
           = submit_tag  "Save", class: "submit"
           .note
-            %p You are required to input your Credentials to activate your  Wallet. Without them, you cannot create any  addresses, and you cannot send your  to anyone.
+            %p You are required to input your Aml Bitcoin Credentials to activate your Aml Bitcoin Wallet. Without them, you cannot create any Aml Bitcoin addresses, and you cannot send your aml bitcoins to anyone.
             %h3 Important:
-            %p These Credentials are linked to your real personal identity, making  AML/KYC compliant. Never give/share your credentials with any other person.
+            %p These Aml Bitcoin Credentials are linked to your real personal identity, making Aml Bitcoin AML/KYC compliant. Never give/share your credentials with any other person.

@@ -45,7 +45,7 @@ header, section, footer, aside, nav, main, article, figure {
 }
 
 .bg {
-
+	background: url(/assets/body_bg.jpg) no-repeat top center fixed ;
 
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -54,7 +54,7 @@ header, section, footer, aside, nav, main, article, figure {
 			min-height:100%;
 }
 
-.login_bg{	
+.login_bg{	background: url(/assets/login_bg.jpg) no-repeat top center fixed ;
 
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -87,7 +87,7 @@ body{overflow-x:hidden;}
 
 #footer{background:#013660; color:#fff; padding:1% 0%;}
 
-.form_group{padding:3% 3% 14% 3%; background-size:95%; font-family: 'TrajanProBold'; font-size:12px; font-weight:bold; }
+.form_group{background:url(/assets/from_bg.jpg) center center no-repeat; padding:3% 3% 14% 3%; background-size:95%; font-family: 'TrajanProBold'; font-size:12px; font-weight:bold; }
 h3{font-family: 'open_sanslight'; color:#FFFFFF; font-size:20px; padding-bottom:5%;}
 .lg_btn{background:url(/assets/btn_bg.png) no-repeat; padding:10px; display:block; color:#000000;}
 .btn_block{ width:60%; margin:0px auto; text-transform:uppercase;}
