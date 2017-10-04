@@ -120,10 +120,10 @@ padding:45px 0px 25px;
 margin:0px;}
 
 .welcome-div .title {font-family: 'TrajanProBold';
-font-size:79px;
-line-height:79px;
+font-size:47px;
+line-height:47px;
 font-weight:400;
-padding:0px 0px 45px;
+padding:0px 0px 35px;
 margin:0px;}
 
 .welcome-div .form_group { max-width:575px;
@@ -187,7 +187,7 @@ padding-right:20px}
 	margin:0px;
 	padding:0px;}
 
-.credentials-page .login-box { max-width:440px; margin: 0 auto;} 
+.credentials-page .login-box { max-width:440px; margin: 0 auto;}
 
 .credentials-page .login-box label { font-size:16px;
 margin-bottom:10px;
