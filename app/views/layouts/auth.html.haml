@@ -2,7 +2,7 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}/
-    = favicon_link_tag 'https://idv.amltoken.com/assets/logo.png', :type => 'image/png'
+
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
     %title= content_for?(:title) ? yield(:title) : "AML Bitcoin"
     %meta{:content => "#{content_for?(:description) ? yield(:description) : "Www"}", :name => "description"}/
@@ -11,7 +11,7 @@
     = javascript_include_tag params[:controller], 'data-turbolinks-track' => true if Rails.application.assets.find_asset(params[:controller].to_s).present?
     = csrf_meta_tags
 
-    
+
 
 
     /[if lt IE 9]
@@ -26,7 +26,7 @@
     %section.login_bg
       %header
         .container
-          = link_to image_tag("small-logo.png", class: "img-responsive"), root_path
+          
       .container
         .login-box
           = yield

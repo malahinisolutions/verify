@@ -7,20 +7,20 @@ class DeviseMailer < Devise::Mailer
     attach_logo
     super
   end
-  
+
   def reset_password_instructions(record, token, opts={})
     attach_logo
     super
   end
-  
+
   def unlock_instructions(record, token, opts={})
     attach_logo
     super
   end
 
   protected
-  
+
   def attach_logo
-    attachments.inline['logo_aten.png'] = File.read(Rails.root.join('app/assets/images/logo_aten.png'))
+    
   end
 end

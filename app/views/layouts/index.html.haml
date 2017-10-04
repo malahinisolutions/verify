@@ -2,7 +2,7 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}/
-    = favicon_link_tag 'https://idv.amltoken.com/assets/logo.png', :type => 'image/png'
+    
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
     %title= content_for?(:title) ? yield(:title) : "AML Bitcoin"
     %meta{:content => "#{content_for?(:description) ? yield(:description) : "Www"}", :name => "description"}/
