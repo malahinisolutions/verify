@@ -53,7 +53,5 @@ margin-bottom: 30px;
 .login-page #footer{
   background: #013660 !important;
   color: #fff !important;
-  position: absolute;
-width: 100%;
-bottom: 0px;
 }
+.bg_foot{margin-bottom: 100px;}
