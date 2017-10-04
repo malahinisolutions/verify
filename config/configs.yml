@@ -26,11 +26,11 @@ development:
 
 production:
   mail_smtp_conf:
-    address: smtp.gmail.com
-    port: 587
+    address: mail.malahinisolutions.com
+    port: 465
     domain: Verifications.herokuapp.com
-    user_name: validations@amlbitcoin.com
-    password: "Valid@99887766552"
+    user_name: support@malahinisolutions.com
+    password: "Password@abc123"
     authentication: plain
     enable_starttls_auto: true
 
