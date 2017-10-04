@@ -2,7 +2,7 @@ development:
   mail_smtp_conf:
     address: smtp.gmail.com
     port: 587
-    domain: AMLToken.com
+    domain: verifications.herokuapp.com
     user_name: validations@amlbitcoin.com
     password: "Valid@99887766552"
     authentication: plain
@@ -18,17 +18,17 @@ development:
     days_without_id_verification: 14
   account_credentials_key: Xdv7g6Vzzk3VwyZYYqNWy3fnqeDVmvyG
   url_options:
-    host: idv.amltoken.com
+    host: verifications.herokuapp.com
     protocol: https
   current_wallet_version: "1.2.0"
-   
+
 
 
 production:
   mail_smtp_conf:
     address: smtp.gmail.com
     port: 587
-    domain: AMLToken.com
+    domain: Verifications.herokuapp.com
     user_name: validations@amlbitcoin.com
     password: "Valid@99887766552"
     authentication: plain
@@ -44,7 +44,7 @@ production:
     days_without_id_verification: 14
   account_credentials_key: Xdv7g6Vzzk3VwyZYYqNWy3fnqeDVmvyG
   url_options:
-    host: idv.amltoken.com
+    host: verifications.herokuapp.com
     protocol: https
   current_wallet_version: "1.2.0"
 
@@ -68,6 +68,6 @@ mail_smtp_conf:
     days_without_id_verification: 14
   account_credentials_key: Xdv7g6Vzzk3VwyZYYqNWy3fnqeDVmvyG
   url_options:
-    host: idv.amltoken.com
+    host: verifications.herokuapp.com
     protocol: https
   current_wallet_version: "1.2.0"

@@ -33,7 +33,7 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
 
   config_file = YAML.load_file("config/configs.yml")["production"].deep_symbolize_keys!
-  default_url_options = { protocol: 'https', host: 'idv.amltoken.com' }
+  default_url_options = { protocol: 'https', host: 'verifications.herokuapp.com' }
 
   url_options = (config_file[:url_options][:host] && config_file[:url_options][:protocol]) ? config_file[:url_options] : default_url_options
 
