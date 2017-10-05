@@ -837,7 +837,7 @@ min-height:100%;}
 }
 
 @media (min-width:1200px) and (max-width:1400px) {
-.welcome-div-wrap { background-position:-240px 0px}
+.welcome-div-wrap { background-position:none;}
 .welcome-div {max-width: auto;
 width: auto;}
 .account-profile-page .main-content-area section {
@@ -857,7 +857,7 @@ min-height:100%;}
 }
 
 @media (min-width: 980px) and (max-width: 1200px) {
-.welcome-div-wrap { background-position:-440px 0px}
+.welcome-div-wrap { background-position:none;}
 
 .account-profile-page .main-content-area section {
     max-width: 840px;
