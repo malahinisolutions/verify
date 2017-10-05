@@ -27,8 +27,8 @@ development:
 production:
   mail_smtp_conf:
     address: mail.malahinisolutions.com
-    port: 25
-    domain: verifications.herokuapp.com
+    port: 587
+    domain: Verifications.herokuapp.com
     user_name: support@malahinisolutions.com
     password: "Password@abc123"
     authentication: login
