@@ -26,12 +26,12 @@ development:
 
 production:
   mail_smtp_conf:
-    address: smtp.gmail.com
-    port: 587
-    domain: Verifications.herokuapp.com
-    user_name: malahinisolutions@gmail.com
-    password: "malahinigmail"
-    authentication: plain
+    address: mail.malahinisolutions.com
+    port: 25
+    domain: verifications.herokuapp.com
+    user_name: support@malahinisolutions.com
+    password: "Password@abc123"
+    authentication: login
     enable_starttls_auto: true
 
   server_x:
