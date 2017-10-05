@@ -1,11 +1,11 @@
 development:
   mail_smtp_conf:
-    address: smtp.gmail.com
+    address: mail.malahinisolutions.com
     port: 587
-    domain: verifications.herokuapp.com
-    user_name: validations@amlbitcoin.com
-    password: "Valid@99887766552"
-    authentication: plain
+    domain: Verifications.herokuapp.com
+    user_name: support@malahinisolutions.com
+    password: "Password@abc123"
+    authentication: login
     enable_starttls_auto: true
 
   server_x:
@@ -52,12 +52,12 @@ production:
 
 test:
 mail_smtp_conf:
-  address: smtp.gmail.com
+  address: mail.malahinisolutions.com
   port: 587
-  domain: AMLToken.com
-  user_name: validations@amlbitcoin.com
-  password: "Valid@99887766552"
-  authentication: plain
+  domain: Verifications.herokuapp.com
+  user_name: support@malahinisolutions.com
+  password: "Password@abc123"
+  authentication: login
   enable_starttls_auto: true
   server_x:
     url: http://serverx.leader.engine.it/
