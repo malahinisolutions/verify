@@ -991,7 +991,7 @@ header .page-title { float:none;
 display:block;
 width: 100%;
 padding-bottom:20px;}
-.account-profile-page .main-content-area header .my-accout {max-width: 160px;
+.account-profile-page .main-content-area header .my-accout {max-width: 100%;
 text-align: right;
 float: right;
 width:100%;
@@ -1078,12 +1078,12 @@ margin:10px;}
 .login-page .login-box .form_inner {
     padding: 25px 5%;
 }
-.login-page .login-box h4 {ont-size: 26px;
+.login-page .login-box h4 {font-size: 26px;
 line-height: 32px;
 color: #013660;
 margin: 0px;
 padding: 0px 0px 10px;
-margin-bottom: 30px;}
+margin-bottom: 15px;}
 .login-page .form-group, .login-page .form-group {
     margin-bottom: 35px;
 }
@@ -1091,18 +1091,32 @@ margin-bottom: 30px;}
     font-size: 15px;
     padding: 20px 0px 10px;
 }
+.welcome-div-wrap .row {
+    margin-bottom: 0px;
+    margin-right: 0px !important;
+	 margin-right: 0px !important;
+}
 
-[class*="col-"] { max-width:80%;
+/*[class*="col-"] { max-width:80%;
 padding-left:10%;
 padding-right:10%;
-}
+}*/
 
 }
 
 @media (max-width: 579px) {
 .welcome-div .form_group { background-size:cover;
 margin:5px auto;}
-
+.welcome-div-wrap .row {
+    margin-bottom: 0px;
+    margin-left: 0px !important;
+	 margin-right: 0px !important;
+	 
+}
+.process-menu {
+    background-color: #0a2035;
+    padding: 0px 27px 0px;
+	}
 }
 
 
@@ -1117,6 +1131,7 @@ margin:5px auto;}
     background: #fff;
     padding: 0px;
 }
+.welcome-div{margin-right: 0px !important;}
 .tutorials li a {font-size: 13px;
 line-height:17px;
 }
@@ -1132,11 +1147,11 @@ padding:30px 0px 20px;
 }
 
 .welcome-div .title {
-font-size:30px;
-line-height:30px;
-font-weight:400;
-padding:0px 0px 25px;
-margin:0px;}
+    font-size: 22px;
+    line-height: 10px;
+    font-weight: 400;
+    padding: 0px 0px 10px;
+    margin: 0px;}
 
 
 
@@ -1157,18 +1172,14 @@ line-height: 40px;
 height: 40px;}
 .welcome-div .form_group .btn { font-size:12px}
 
-.login-page .login-box { max-width:300px;
+.login-page .login-box { max-width:100%;
 margin:10px auto;}
 .welcome-div .form_group  { margin:5px;}
 .account-profile-page .main-content-area header { text-align:center}
 
-.account-profile-page .main-content-area header * { max-width:300px;}
+.account-profile-page .main-content-area header * { max-width:100%;}
 .right-bottom img { max-width:230px !important}
-[class*="col-"] {
-    max-width: 56%;
-    padding-left: 0%;
-    padding-right: 0%;
-}
+
 .faq-div .panel .panel-heading a { font-size:16px;
 line-height:20px;}
 
@@ -1176,14 +1187,38 @@ line-height:20px;}
     font-size: 14px;
     line-height: 24px;
 }
-
+.welcome-div-wrap .row {
+    margin-bottom: 0px;
+    margin-left: 0px !important;
+	 margin-right: 0px !important;
+	 
+}
+#footer  .com-md-4{font-size: 13px !important; }
+ .process-menu {
+    background-color: #0a2035;
+    padding: 0px 27px 0px;
+ }
+ .account-area h1 {
+ font-size: 18px;}
+ .account-area h1{margin: 0px 0px 10px;}
+ .credentials-page .login-box label {
+ font-size: 14px;}
+ .select-fields #_date_of_birth_3i{
+	     width: 30% !important;
+ }
+  .select-fields #_date_of_birth_2i{
+	     width: 30% !important;
+ }
+   .select-fields #_date_of_birth_1i{
+	     width: 30% !important;
+ }
 
 }
 
-@media (min-width: 320px) and (max-width:479px) {
-}
+
 
 @media (max-width: 320px) {
+
 }
 
 @media (max-width: 319px) {
