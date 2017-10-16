@@ -304,6 +304,9 @@
       $('#video_id').val(streamName);
       $("#btnSubmitForm").show();
     }
+    function onVideoUploadFailed(error){
+      alert("Something wrong!!!, Unable to upload, Please resubmit your video for verification.");
+    }
     $( "#btnSubmitForm" ).click(function() {
       $('#saving_container').show();
       //$(this).prop("disabled",true);
