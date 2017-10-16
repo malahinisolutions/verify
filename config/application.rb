@@ -12,10 +12,10 @@ module Www
   class Application < Rails::Application
 		config.autoload_paths += %W(#{config.root}/app/middlewares)
     config.autoload_paths << Rails.root.join('lib', 'ext')
-
+    config.force_ssl = true
     Dir[File.join(Rails.root, "lib", "ext", "*.rb")].each {|l| require l }
 
-    config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')  
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     # config.assets.precompile += [/.*\.js/,/.*\.css/,/.*\.gif/, /.*\.png/]
     config.assets.precompile += [/.*\.js/,/.*\.gif/,/.*\.png/]
@@ -27,7 +27,7 @@ module Www
     config_file = YAML.load_file("config/configs.yml")[Rails.env]
 
     config.action_mailer.delivery_method = :smtp
-    config.action_mailer.smtp_settings = 
+    config.action_mailer.smtp_settings =
     {
                      address: config_file["mail_smtp_conf"]["address"],
                         port: config_file["mail_smtp_conf"]["port"],
@@ -35,7 +35,7 @@ module Www
                    user_name: config_file["mail_smtp_conf"]["user_name"],
                     password: config_file["mail_smtp_conf"]["password"],
               authentication: config_file["mail_smtp_conf"]["authentication"],
-        enable_starttls_auto: config_file["mail_smtp_conf"]["enable_starttls_auto"]  
+        enable_starttls_auto: config_file["mail_smtp_conf"]["enable_starttls_auto"]
     }
 
     # Settings in config/environments/* take precedence over those specified here.
