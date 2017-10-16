@@ -300,6 +300,10 @@
       console.log('0810c42a56428dbfa51ff354df295645');
       $("#btnSubmitForm").show();
     }
+    function onVideoUploadSuccess(streamName, streamDuration, userId, recorderId, audioCodec, videoCodec, fileType) {
+      $('#video_id').val(streamName);
+      $("#btnSubmitForm").show();
+    }
     $( "#btnSubmitForm" ).click(function() {
       $('#saving_container').show();
       //$(this).prop("disabled",true);
