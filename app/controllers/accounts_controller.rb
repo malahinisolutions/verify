@@ -1,17 +1,17 @@
 class AccountsController < ApplicationController
   DATA_STRING_PATTERN = "%s.%s.%s"
   ARCHIVE_NAME_PATTERN = "wallets%s"
-  
-  #POSSIBLE_ARCHIVES = ["windows/atenblackgoldcoin-qt.zip", "windows/atenblackgoldcoin-qt.exe", 
+
+  #POSSIBLE_ARCHIVES = ["windows/atenblackgoldcoin-qt.zip", "windows/atenblackgoldcoin-qt.exe",
   #                     "macos/AtenBlackGoldCoin-Qt.zip"
   #                    ]
-  
-  POSSIBLE_ARCHIVES = ["windows/Atencoin-qt.zip", "windows/Atencoin-qt.exe", 
+
+  POSSIBLE_ARCHIVES = ["windows/Atencoin-qt.zip", "windows/Atencoin-qt.exe",
                        "macos/Atencoin-Qt.zip"
                       ]
 
    before_action :authenticate_account!, except: [:get_wallet, :get_wallet_version]
-  
+
    before_filter :check_all_steps_verirification, except: [:get_wallet, :security, :form_for_personal_data, :save_personal_data]
 
 
@@ -27,7 +27,7 @@ class AccountsController < ApplicationController
 
   def get_wallet # GET
     download_file = params[:file_name]
-    
+
     case download_file
     when 'windows/atenblackgoldcoin-qt.zip'
       download_file = 'windows/Atencoin-qt.zip'
@@ -69,18 +69,18 @@ class AccountsController < ApplicationController
 
     if personal_data.valid?
       session[:current_account_information] = {             id: current_account.id.to_s,
-                                                       aten_id: current_account.aten_id, 
-                                                    first_name: params[:first_name], 
-                                                     last_name: params[:last_name], 
-                                                           dob: dob, 
-                                               middle_initials: params[:middle_initials].to_s, 
-                                                   nationality: params[:nationality], 
+                                                       aten_id: current_account.aten_id,
+                                                    first_name: params[:first_name],
+                                                     last_name: params[:last_name],
+                                                           dob: dob,
+                                               middle_initials: params[:middle_initials].to_s,
+                                                   nationality: params[:nationality],
                                                        country: params[:country_id],
                                                           city: params[:city_id],
-                                                         state: (params[:state_id] ? State.find(params[:state_id]).name : ""), 
-                                                  home_address: params[:home_address], 
-                                                           zip: params[:zip], 
-                                               mailing_address: params[:mailing_address] 
+                                                         state: (params[:state_id] ? State.find(params[:state_id]).name : ""),
+                                                  home_address: params[:home_address],
+                                                           zip: params[:zip],
+                                               mailing_address: params[:mailing_address]
                                               }
       #redirect_to session[:url_from]
       redirect_to '/verification/verify'
@@ -88,8 +88,8 @@ class AccountsController < ApplicationController
       @default_time = !params["date_of_birth(1i)"].blank? && !params["date_of_birth(2i)"].blank? && !params["date_of_birth(2i)"].blank? ? Time.parse(dob) : nil
       @country = params[:country_id] ? [Country.find_by_Code(params[:country_id]).name, params[:country_id]] : ["", ""]
       @errors = personal_data.errors.full_messages
-      render :form_for_personal_data  
-    end 
+      render :form_for_personal_data
+    end
   end
 
   def save_wallet # POST /wallet
@@ -116,7 +116,7 @@ class AccountsController < ApplicationController
     if aten_credentials.nil?
       gflash :now, error: "Invalid confirmation token."
     else
-      
+
       # begin
         Wallet.update_wallet(aten_credentials.account, aten_credentials.get_wallet_params)
       # rescue StandardError => e
@@ -140,7 +140,7 @@ class AccountsController < ApplicationController
   end
 
   def wallet_params
-    params.require(:wallet).permit( :username, :password )  
+    params.require(:wallet).permit( :username, :password )
   end
 
   def set_wallet_params
