@@ -30,6 +30,9 @@ USER_PASSWORD = "Listed2017"
     if params[:confirmation_token]
       session[:current_user_ids] = USER_PASSWORD
     end
+    if param[:reset_password_token]
+      session[:current_user_ids] = USER_PASSWORD
+    end
     if session[:current_user_ids]!=USER_PASSWORD
       redirect_to :welcome
     end
