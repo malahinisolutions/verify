@@ -22,7 +22,7 @@ gem 'headshot'
 gem 'whenever'
 gem 'cancan'
 gem 'tzinfo-data'
-
+gem "puma_worker_killer"
 # gem 'countries'
 
 # gem 'countries'
