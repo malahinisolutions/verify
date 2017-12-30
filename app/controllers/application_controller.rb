@@ -27,12 +27,6 @@ USER_PASSWORD = "Listed2017"
   private
 
   def user_is_logged_in
-    if params[:confirmation_token]
-      session[:current_user_ids] = USER_PASSWORD
-    end
-    if param[:reset_password_token]
-      session[:current_user_ids] = USER_PASSWORD
-    end
     if session[:current_user_ids]!=USER_PASSWORD
       redirect_to :welcome
     end
