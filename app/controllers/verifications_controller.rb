@@ -153,8 +153,8 @@ class VerificationsController < ApplicationController
   end
   def upload_image
     filename= DataFile.save_file(params[:upload])
-    videoPath='https://addpipevideos.s3.amazonaws.com/b7622907d970bd19eca1f1da6d5cf1e8/'+ params[:video_id]+'.mp4'
-    videoThumb='https://addpipevideos.s3.amazonaws.com/b7622907d970bd19eca1f1da6d5cf1e8/'+ params[:video_id]+'.jpg'
+    videoPath='https://addpipevideos.s3.amazonaws.com/30e632f0867da92e530135d2114fcea3/'+ params[:video_id]+'.mp4'
+    videoThumb='https://addpipevideos.s3.amazonaws.com/30e632f0867da92e530135d2114fcea3/'+ params[:video_id]+'.jpg'
     doctype=params[:document_type]
     verifications = Verification.where(account: current_account, verification_type: "iamreal")
     if (!verifications.any? || verifications.last.status == "cancelled")
