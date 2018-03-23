@@ -66,7 +66,7 @@
     .tab-content .head {
     font-size: 13px;
 
-		
+
     }
 	.panel-body{padding:0px !important;}
 
@@ -198,7 +198,7 @@ text-align: center;
     display: block;
 }
 .step-test h2{
-		padding:15px 0px 5px 0px; 
+		padding:15px 0px 5px 0px;
 		font-size:22px !important;
 	}
 	.step-test img{width:100% !important;}
@@ -241,9 +241,9 @@ background: #f1e8db;
     margin: 2px 10px;
         margin-top: -30px;
 }
-#VideoRecorder{    
-width:280px !important;
-    height:280px !important;}
+#VideoRecorder{
+width:420px !important;
+    height:330px !important;}
 .circle p {
     display: block;
     text-align: center;
