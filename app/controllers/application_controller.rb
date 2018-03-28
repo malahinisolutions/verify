@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_gflash
 before_filter :user_is_logged_in
   # alias_method :current_user, :current_account
-USER_PASSWORD = "Listed2017"
+USER_PASSWORD = "Server2018"
   VERIFICATIONS_MSG = "Please verify your Account."
 
 
@@ -29,7 +29,7 @@ USER_PASSWORD = "Listed2017"
   def user_is_logged_in
     if params[:confirmation_token]
       session[:current_user_ids] = USER_PASSWORD
-    end 
+    end
     if session[:current_user_ids]!=USER_PASSWORD
       redirect_to :welcome
     end
