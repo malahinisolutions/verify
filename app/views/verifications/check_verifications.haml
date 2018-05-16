@@ -5,7 +5,7 @@
         %h1 Identity Verification
         %p
           Please verify your identity using one of the two identification documents
-          (Either Drivers License or Passport)
+          (Either Driving License or Passport)
           Your home address must be on the identification document you chose.
         %p
           Your are also required to have a web cam connected to your computer.
@@ -14,7 +14,7 @@
           .col-sm-8.col-md-10{style:'padding-left:0px !important;'}
             = iamreal_tag(personal_data_path)
           .col-sm-8.col-md-10.note{style:'padding-left:0px !important;'}
-            %strong Verification System validates customers passport/drivers license with in 14 working days.
+            %strong Verification System validates customers passport/driving license with in 14 working days.
 
 
 
@@ -32,15 +32,15 @@
 
 .clearfix
 <div id="myModal" class="modal fade">
-<div class="modal-dialog" style="padding:8px;background:rgba(39, 93, 141,0.8);top: 20% !important;">
+<div class="modal-dialog" style="padding:8px;background:rgba(39, 93, 141,0.8);top: 20% !important; width:660px;">
 <div class="modal-content">
 <div class="modal-header" style="border-bottom:1px solid #bababa;text-align:center; background: -webkit-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));-webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
 <i class="fa fa-info-circle" aria-hidden="true" style="color:#204d74;font-size:50px;"></i>
 <h4 class="modal-title">Before we start..</h4>
 </div>
 <div class="modal-body">
-<p><i class="fa fa-asterisk" aria-hidden="true" style="color:#5c5c5c;"></i> Do you have working camera on your computer?</p>
-<p><i class="fa fa-asterisk" aria-hidden="true" style="color:#5c5c5c;"></i> Do you have scanned copy of Drivers License or Passport on your computer?</p>
+<p><i class="fa fa-asterisk" aria-hidden="true" style="color:#5c5c5c;"></i> Do you have a working camera on your computer?</p>
+<p><i class="fa fa-asterisk" aria-hidden="true" style="color:#5c5c5c;"></i> Do you have a scanned copy of your Driving License or Passport in the computer?</p>
 </div>
 <div class="modal-footer" style="background: -webkit-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));border-top: 1px solid #bababa !important;text-align:center;">
 <a class="modelclose btn" href="#" style="color:#fff;background-color: #f0ad4e;padding:8px 30px;">No</a>
@@ -58,7 +58,7 @@
 <h4 class="modal-title">We will wait for you</h4>
 </div>
 <div class="modal-body">
-<p><i class="fa fa-asterisk" aria-hidden="true" style="color:#5c5c5c;"></i> Please try again with a working camera and a scanned copy of Drivers Lincese or Passport on your computer.</p>
+<p><i class="fa fa-asterisk" aria-hidden="true" style="color:#5c5c5c;"></i> Please try again with a working camera and a scanned copy of Driving Lincese or Passport on your computer.</p>
 </div>
 <div class="modal-footer" style="background: -webkit-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));border-top: 1px solid #bababa !important;text-align:center;">
 <button type="button" class="btn btn-primary" style="padding:8px 30px;" data-dismiss="modal">Ok</button>
@@ -77,3 +77,4 @@ $("#myModals").modal({backdrop: 'static', keyboard: false});
 });
 });
 </script>
+ 

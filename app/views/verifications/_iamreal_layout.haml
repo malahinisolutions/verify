@@ -6,7 +6,8 @@
     %title= content_for?(:title) ? yield(:title) : "Verification System"
     %meta{:content => "#{content_for?(:description) ? yield(:description) : "Www"}", :name => "description"}/
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
-
+    = favicon_link_tag 'favicon.png', :rel => 'icon', :type =>  'image/png'
+    = favicon_link_tag 'favicon.png', :rel => 'apple-touch-icon', :type =>  'image/png'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = javascript_include_tag 'identify.js'
@@ -14,7 +15,7 @@
     = csrf_meta_tags
   %body
 
-    
+
 :javascript
   $( document ).ready(function() {
   iamreal.verify3d('#{guid}', function (msg) { onComplete() }, '#{redirect_url}')

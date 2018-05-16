@@ -4,13 +4,12 @@
     .welcome-div.pull-right.text-center
       %a{:href => "#"}
 
-      %h2.subtitle WELCOME TO
-      %h1.title Verification System
+      %h2.subtitle WELCOME TO THE
+      %h1.title Biometric Authentication System
       .form_group.text-center
-        %h3 Verification System
         .btn_block
           - if current_account
-            %a.btn.lg_btn.bg_foot{:href => control_profile_path} My Account
+            %a.btn.lg_btn{:href => control_profile_path} My Account
           - elsif current_verifier
             %a.btn.lg_btn.bg_foot{:href => verifiers_verifications_path} My Account
           - else

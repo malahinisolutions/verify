@@ -24,9 +24,9 @@ module ApplicationHelper
 
     unverified_label =
       if identify_verifications.any? && identify_verifications.last.status == "pending"
-        content_tag(:span, 'Pending', style: "float: right;margin-top: 2px;", class: "label label-primary")
+        content_tag(:span, 'Pending', style: "float: right;margin-top: 2px;padding: 6px 20px;border-radius: 20px;font-size: 14px;", class: "label label-primary")
       else
-        link_to "Verify Now", path, method: :get, class: "#{html_class} btn btn-warning btn-xs"
+        link_to "Verify Now", path, method: :get, class: "#{html_class} btn btn-warning btn-xs", style:"padding: 6px 20px;border-radius: 20px;font-size: 14px;"
       end
 
     #current_account.send(type) ? verified_icon : unverified_label
@@ -40,9 +40,9 @@ module ApplicationHelper
     iamreal_verifications = Verification.where(account: current_account, verification_type: "iamreal")
     unverified_label =
       if iamreal_verifications.any? && iamreal_verifications.last.status == "pending"
-        content_tag(:span, 'Pending', style: "margin-top: 2px;", class: "label label-primary")
+        content_tag(:span, 'Pending', style: "margin-top: 2px;padding: 6px 20px;border-radius: 20px;font-size: 14px;", class: "label label-primary")
       else
-        link_to "Verify Now", '#', class: "verify btn btn-warning btn-xs"
+        link_to "Verify Now", '#', class: "verify btn btn-warning btn-xs", style:"padding: 6px 20px;border-radius: 20px;font-size: 14px;"
       end
 
     current_account.iamreal_verified? ? verified_icon : unverified_label

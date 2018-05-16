@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="/assets/fileinput.min.css" />
   <script type="text/javascript" src="/assets/application.js"></script>
   <script src="/assets/fileinput.js"></script>
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" type="image/png" href="/assets/favicon.png" />
 
 </head>
 <body class='account-profile-page'>
@@ -23,10 +25,20 @@
         <div class='row margin0'>
           <div class='row-inr'>
             <!-- main content starts here -->
-            <div class='main-right-area bg-page'>
+            <div id="verify-bg" class='main-right-area bg-page'>
               <header>
-                <div class='page-title'>
-
+                <div class="my-accout pull-right" style="margin-top:0px;">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="false">
+                      <%=current_account.email%>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                        <a rel="nofollow" data-method="delete" href="/accounts/sign_out">Sign Out</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div class='clr'></div>
               </header>
@@ -60,7 +72,7 @@
                         <p class="tab-detail">
                           Verification System requested that you verify your identity.
                           <br />
-                          The process includes a few steps:
+                          The process includes following steps:
                         </p>
                         <table class="tab-pane-table">
                           <tbody>
@@ -74,7 +86,7 @@
                           </tr>
                           <tr>
                             <td><span class="verification-home">3</span></td>
-                            <td>Record a short video of yourself (selfie) reading a security code.</td>
+                            <td>Record a short video of yourself (selfie) reading allow the security code.</td>
                           </tr>
                           </tbody>
                         </table>
@@ -89,7 +101,7 @@
                             Are these details correct ?
                           </h4>
                           <p>
-                            These details MUST MATCH your governmental issued Identification Card or Drivers License or you will FAIL Verification.
+                            These details MUST MATCH your government issued i.e. Driving License or Passport incase of any mismatch, you will FAIL Verification.
                           </p>
                         </div>
 
@@ -111,18 +123,18 @@
                           </ul>
                         </div>
                         <div class="form-horizontal text-center">
-                          <a href="/control/personal_information" class="btn-submit btn btn-success-1 btn-outline-rounded green">Go Back</a>
+                          <INPUT TYPE="button" VALUE="Go Back" class="btn-submit btn btn-success-1 btn-outline-rounded green"  onClick="history.go(-1)" style="width:165px;">
                           <button type="button" href="#profile" id="settings_form" name="settings_form" class="btn-submit btn btn-success-1 btn-outline-rounded green">
                               Continue
                             </button>
                           </div>
                       </div>
                       <div class="tab-pane fade" id="profile">
-                        <p class="upload-passport">Upload a passport or drivers license </p>
+                        <p class="upload-passport">Upload a passport or driving license </p>
                         <label class="document-type">Document Type:</label>
                         <select class="kv-fileinput-select"  name="document_type">
                           <option value="Driver's License">
-                            Driver's License
+                            Driving License
                           </option>
                           <option value="Passport">
                             Passport
@@ -168,19 +180,16 @@
                           <button type="submit" href="#settings" id="btnSubmitForm" name="messages_form"
                                   class="btn btn-success-1 btn-outline-rounded green" style="display: none;"> Finish </button>
                         </div>
-
-                            <p >
-                              Record a short video of yourself reading aloud the code below in English, digit by digit.
-                              <br />
-                              Your whole face must be visible. Take off your glasses and hat.
-                              <br />
-                              Please hold your passport or driving licence at the front of webcam:
-                              <br/>
-                              If you are showing your passport then please show the address page and the page which has your photo.
-                              <br/>
-                              If you are showing your driving licence then please show front and backside of the card.
-
-                            </p>
+                            <ul class="list-st">
+                                <li>Record a short video of yourself reading aloud the code below in English, digit by digit.</li>
+                                <li>Your whole face must be visible. Take off your glasses and hat. </li>
+                                <li>Please hold your passport or driving licence at the front of webcam:
+                                  <ul style="clear: both; list-style: none;">
+                                    <li> <i class="fa fa-long-arrow-right"></i> If you are showing your passport then please show the address page and the page which has your photo. </li>
+                                    <li> <i class="fa fa-long-arrow-right"></i> If you are showing your driving licence then please show front and backside of the card.</li>
+                                  </ul>
+                                </li>
+                            </ul>
 
                           </div>
 
@@ -246,7 +255,7 @@
           e.preventDefault();
           if("profile_form"==formname && $("#inputFile11").val()=="")
           {
-            alert('Please select a image first');
+            alert('Please select an image first');
             return false;
           }
           $('#home_li').addClass('disabled');
@@ -283,7 +292,7 @@
           else
           {
             error=true;
-            alert('You can only select image');
+            alert('You can only select an image');
           }
         }
         reader.readAsDataURL(input.files[0]);
