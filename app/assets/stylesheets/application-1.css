@@ -650,7 +650,7 @@ color:#000;
     margin: 0px auto;
     cursor: pointer;
 }
-.list-st{clear: both;padding:padding: 10px 20px;}
+.list-st{clear: both;padding: 10px 20px;}
 .list-st li{ margin-left: 10px; padding-top:5px;}
 .list-st li ul li{ margin-left: -3px;}
 .list-st li ul li .fa{ color:#000 !important;}
