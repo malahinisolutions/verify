@@ -26,8 +26,8 @@
           .form-group.form-group-space.col-lg-6
             = label_tag "country_id", "Country"
             .select-fields
-              = select_tag "country_id", options_for_select( [@country] + Country.where(:active => true).order("Name").collect{ |c| [c.name, c.code]}), {onchange: "getLocations(this.value)", class: "form-control", required: "required"}
-          .form-group.form-group-space.auto-complete.col-lg-6#get_cities
+              = select_tag "country_id", options_for_select( [@country] + Country.where(:active => true).order("Name").collect{ |c| [c.name, c.code]}), {class: "form-control", required: "required"}
+          .form-group.form-group-space.auto-complete.col-lg-6#get_cities1
             = label_tag "city_id", "City"
             = text_field_tag "city_id", params[:city_id], class: "form-control", required: "required"
           .form-group.form-group-space.col-lg-6
