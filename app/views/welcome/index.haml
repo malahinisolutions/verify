@@ -11,7 +11,7 @@
           - if current_account
             %a.btn.lg_btn{:href => control_profile_path} My Account
           - elsif current_verifier
-            %a.btn.lg_btn.bg_foot{:href => verifiers_verifications_path} My Account
+            %a.btn.lg_btn{:href => verifiers_verifications_path} My Account
           - else
             %a.btn.lg_btn{:href => new_account_session_path} Login
             %span.or or
